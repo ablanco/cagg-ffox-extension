@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<!--
+    Firefox Extension. A notifier for http://www.comicagg.com
+    Copyright (C) <2008>  Alejandro Blanco
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE dialog SYSTEM "chrome://cagg-notifier/locale/cagg-notifier.dtd">
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<dialog id="caggprefrences"
+buttons="accept,cancel"
+ondialogaccept="com.cagg.notifier.savePreferences();"
+onload="com.cagg.notifier.preferencesInit();"
+title="&cagg-notifier.pref.title;"
+xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script type="application/x-javascript" src="chrome://comic-aggregator-notifier/content/caggnotifier.js" />
+
+    <vbox align="left">
+
+        <label value="&cagg-notifier.pref.user;" control="cagg.user"/>
+        <textbox id="cagg.user"/>
+
+        <label value="&cagg-notifier.pref.timer;" control="cagg.time"/>
+        <textbox id="cagg.time"/>
+
+        <checkbox id="cagg.tab" label="&cagg-notifier.pref.tabs;" />
+
+        <checkbox id="cagg.dev" label="&cagg-notifier.pref.dev;" />
+
+    </vbox>
+
+</dialog>

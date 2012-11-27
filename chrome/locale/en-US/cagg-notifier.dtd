@@ -1,0 +1,6 @@
+<!ENTITY cagg-notifier.pref.title "Preferences">
+<!ENTITY cagg-notifier.pref.user "User name:">
+<!ENTITY cagg-notifier.pref.timer "Refreshing time (15 minutes min.):">
+<!ENTITY cagg-notifier.pref.tabs "Open new tabs in background?">
+<!ENTITY cagg-notifier.tooltip.empty "Nothing new to read">
+<!ENTITY cagg-notifier.pref.dev "Open beta version of the website?">

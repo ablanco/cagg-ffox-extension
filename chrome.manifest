@@ -1,0 +1,6 @@
+content comic-aggregator-notifier chrome/content/
+
+overlay chrome://browser/content/browser.xul chrome://comic-aggregator-notifier/content/caggnotifier.xul
+
+locale cagg-notifier en-US chrome/locale/en-US/
+locale cagg-notifier es-ES chrome/locale/es-ES/

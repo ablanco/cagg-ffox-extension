@@ -1,0 +1,6 @@
+<!ENTITY cagg-notifier.pref.title "Preferencias">
+<!ENTITY cagg-notifier.pref.user "Nombre de usuario:">
+<!ENTITY cagg-notifier.pref.timer "Tiempo de refresco (15 minutos mín.):">
+<!ENTITY cagg-notifier.pref.tabs "¿Abrir nuevas pestañas en segundo plano?">
+<!ENTITY cagg-notifier.tooltip.empty "Nada nuevo que leer">
+<!ENTITY cagg-notifier.pref.dev "¿Abrir la versión beta de la web?">

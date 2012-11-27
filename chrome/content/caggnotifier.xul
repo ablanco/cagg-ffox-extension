@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<!--
+    Firefox Extension. A notifier for http://www.comicagg.com
+    Copyright (C) <2008>  Alejandro Blanco
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE dialog SYSTEM "chrome://cagg-notifier/locale/cagg-notifier.dtd">
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<overlay id="caggnotifier"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script type="application/x-javascript" src="chrome://comic-aggregator-notifier/content/caggnotifier.js"/>
+    <script>
+        window.addEventListener("load", com.cagg.notifier.caggInit, false);
+    </script>
+
+    <toolbarpalette id="BrowserToolbarPalette">
+        <toolbarbutton id="caggnotifier-button"
+            class="chromeclass-toolbar-additional caggnotifier-off"
+            tooltip="caggnotifier-tooltip"
+            onmouseup="com.cagg.notifier.processClick(event);"
+            onmouseover="com.cagg.notifier.tooltipPopulate();"
+            orient="horizontal"
+            dir="normal">
+            <image id="cagg.icon"
+                src="chrome://comic-aggregator-notifier/content/off.png"/>
+            <label id="cagg.number"
+                value="0"/>
+        </toolbarbutton>
+    </toolbarpalette>
+
+    <window id="main-window">
+        <tooltip id="caggnotifier-tooltip"
+            noautohide="true"
+            orient="vertical"
+            style="background-color: #33DD00;">
+            <vbox>
+                <label id="cagg.userTT" style="font-weight: bold;" value=""/>
+                <grid flex="1">
+                    <label id="cagg.empty" hidden="false" value="&cagg-notifier.tooltip.empty;"/>
+                    <rows id="caggnotifier-tooltip-details"/>
+                </grid>
+            </vbox>
+        </tooltip>
+    </window>
+
+</overlay>

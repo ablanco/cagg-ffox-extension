@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+    <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+        xmlns:NC="http://home.netscape.com/NC-rdf#"
+        xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <RDF:Description RDF:about="rdf:#$ie1wy1"
+        em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+        em:minVersion="4.0.*"
+        em:maxVersion="6.*" />
+    <RDF:Description RDF:about="urn:mozilla:install-manifest"
+        em:id="notifier@comics.proyectoanonimo.com"
+        em:version="1.3.4"
+        em:type="2"
+        em:name="Comic Aggregator Notifier"
+        em:description="A navigation-bar notifier for http://www.comicagg.com"
+        em:creator="Alejandro Blanco"
+        em:homepageURL="http://www.comicagg.com"
+        em:iconURL="chrome://comic-aggregator-notifier/content/logo48.png"
+        em:icon64URL="chrome://comic-aggregator-notifier/content/logo64.png"
+        em:optionsURL="chrome://comic-aggregator-notifier/content/preferences.xul">
+        <em:targetApplication RDF:resource="rdf:#$ie1wy1"/>
+    </RDF:Description>
+</RDF:RDF>
